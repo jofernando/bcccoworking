@@ -82,6 +82,13 @@
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration" />
     <rule ref="Squiz.Scope.MethodScope" />
     <rule ref="Squiz.WhiteSpace.CastSpacing" />
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+            <property name="spacingAfterLast" value="0" />
+        </properties>
+    </rule>
     <rule ref="Squiz.WhiteSpace.ScopeClosingBrace" />
     <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing" />
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />

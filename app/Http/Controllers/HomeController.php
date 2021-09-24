@@ -28,21 +28,24 @@ class HomeController extends Controller
     public function index()
     {
         $resultado = Configpaginainicial::get();
-        return view('config/config_home', ['allHome'=>$resultado]);
+        return view('config/config_home', ['allHome' => $resultado]);
     }
+
     public function projects()
     {
         $resultado = Project::orderBy("created_at", "desc")->get();
-        return view('config/config_project' , ['allProject'=>$resultado]);
+        return view('config/config_project', ['allProject' => $resultado]);
     }
+
     public function news()
     {
         $resultado = News::orderBy("created_at", "desc")->get();
-        return view('config/config_news' , ['allNews'=>$resultado]);
+        return view('config/config_news', ['allNews' => $resultado]);
     }
+
     public function pessoas()
     {
         $resultado = Pessoa::orderBy("created_at", "desc")->get();
-        return view('config/config_pessoa', ['allPessoas'=>$resultado]);
+        return view('config/config_pessoa', ['allPessoas' => $resultado]);
     }
 }
